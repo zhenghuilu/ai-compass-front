@@ -1,7 +1,7 @@
 import type { RankingsData, RankingsResponse, FieldsResponse, FieldDefinition, UpdateTimeResponse, UpdateTimeData } from '@/types/ranking'
 import type { Source, SourceResponse } from '@/types/source'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3000'
 
 class ApiError extends Error {
   constructor(message: string) {
