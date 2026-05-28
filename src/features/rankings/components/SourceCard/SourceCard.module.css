@@ -1,0 +1,48 @@
+.card {
+  text-align: left;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s;
+  background: transparent;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.cardActive {
+  composes: card;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.score {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 10px;
+  color: var(--color-muted-foreground);
+  margin-top: 2px;
+}
